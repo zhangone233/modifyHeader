@@ -72,7 +72,7 @@
 
       Object.defineProperty(global, 'XMLHttpRequest', {
         value: factoryXHR(),
-        writable: false,
+        writable: true,
       });
     }
 
