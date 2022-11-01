@@ -245,10 +245,11 @@
 
     function init() {
       modify();
+      appendPanel();
 
-      document.addEventListener('DOMContentLoaded', function (event) {
-        appendPanel();
-      });
+//       document.addEventListener('DOMContentLoaded', function (event) {
+//         appendPanel();
+//       });
     }
 
     init();
