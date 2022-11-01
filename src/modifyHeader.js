@@ -156,7 +156,7 @@
         `;
 
         styleTag.innerText = cssText;
-        document.documentElement.appendChild(styleTag);
+        document.head.appendChild(styleTag);
       })();
 
       (function appendEvent() {
