@@ -16,7 +16,8 @@
         }
       }
       function interceptorRequestFetch(init) {
-        if (!init.headers) {
+        if (!init || !init.headers) {
+          init = init || {};
           init.headers = new Headers();
         }
 
